@@ -13,8 +13,17 @@ a {
   color: #0499ff;
 }
 
+a:hover{
+  color: #13c919;
+}
+
 .cola {
   color: #8c011f;
+}
+
+.cola:hover {
+   padding: 10px;
+   color: #7db700c4;
 }
 
 .nav {
@@ -44,6 +53,10 @@ a {
   margin-right: auto;
 }
 
+.name:hover {
+  color: #fffa62;
+}
+
 header {
   padding-top: 40px;
   width: 100%;
@@ -61,7 +74,6 @@ header img {
 
 header img:hover {
   transform: scale(1.2) rotate(5deg);
-
 }
 
 .tag {
@@ -70,6 +82,10 @@ header img:hover {
   background-color: #fff;
   margin: 10px auto;
   border-radius: 10px;
+}
+
+.tag:hover  {
+  background-color: #fffa62;
 }
 
 .sub-title {
@@ -89,7 +105,6 @@ header img:hover {
   max-width: 500px;
   margin: 10px;
   padding: 50px;
-
   border-bottom: 3px solid grey;
   border-radius: 5px;
 }
@@ -98,8 +113,16 @@ header img:hover {
   background-color: #ff9904;
 }
 
+.tag-yellow:hover{
+    background-color: 	#8cff66;
+}
+
 .tag-blue {
   background-color: #0399ff;
+}
+
+.tag-blue:hover{
+    background-color: 	#8cff66;
 }
 
 .tag-list {

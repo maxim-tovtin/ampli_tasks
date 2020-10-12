@@ -1,0 +1,50 @@
+body  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.button {
+  width: 200px;
+  background-color: #9966ff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  color: #ccb3ff;
+  transition: padding 0.3s ease-out, background-color 1s ease;
+}
+
+.button:hover {
+  padding: 20px;
+  background-color: cyan;
+}
+
+.transition {
+width: 200px;
+background-color: #9966ff;
+text-align: center;
+padding: 10px;
+border-radius: 10px;
+color: #ccb3ff;
+transition: padding 0.3s ease-out, background-color 1s ease;
+}
+
+.transition:hover {
+  padding: 20px;
+  background-color: cyan;
+}
+
+.transform  {
+  width: 200px;
+  background-color: #9966ff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  color: #ccb3ff;
+  transition: transform 1s ease;
+}
+
+.transform:hover {
+  transform: rotateX(30deg);
+}
