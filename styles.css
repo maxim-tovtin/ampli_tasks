@@ -10,11 +10,11 @@ body {
 
 a {
   text-decoration: none;
-  color: #0499ff;
+  color: #c7e8ff;
 }
 
 a:hover{
-  color: #13c919;
+  color: #fffa62;
 }
 
 .cola {
@@ -23,7 +23,7 @@ a:hover{
 
 .cola:hover {
    padding: 10px;
-   color: #7db700c4;
+   color: #13c919;
 }
 
 .nav {
@@ -37,7 +37,7 @@ a:hover{
 .menu {
   display: flex;
   flex-flow: row;
-  color: #fff;
+  color: #c7e8ff;
   list-style-type: none;
   margin: 0 auto;
   padding: 0;
