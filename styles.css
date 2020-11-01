@@ -14,11 +14,11 @@ a {
 }
 
 a:hover{
-  color: #fffa62;
+  color: #13c919;
 }
 
 .cola {
-  color: #8c011f;
+  color: #c7e8ff;
 }
 
 .cola:hover {
@@ -140,4 +140,24 @@ footer {
 
 .col {
   color: #105803;
+}
+
+@media (min-width: 1400px) {
+		.inner {
+		max-width: 1400px;
+		margin: 0 auto;
+		}
+}
+
+@media (max-width: 786px) {
+	#banner h1 {
+		font-size: 2rem;
+	}
+	.flex {
+		flex-flow: column;
+	}
+	#three article {
+		width: 100%;
+		margin-bottom: 50px;
+	}
 }
