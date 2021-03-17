@@ -65,9 +65,11 @@ function itemHandler(player, item) {
   item.kill();
   if (item.key === 'coin') {
      currentScore = currentScore + 10;
-  } else if (item.key === 'poison') {
+  } 
+  else if (item.key === 'poison') {
      currentScore = currentScore - 25;
-  } else if (item.key === 'star') {
+  } 
+  else if (item.key === 'star') {
      currentScore = currentScore + 25;
   }
   if (currentScore === winningScore) {
@@ -75,15 +77,14 @@ function itemHandler(player, item) {
   }
   if (item.key === 'star'){
        createBadge();
-  }
+  }  
 }
-
 // when the player collects the badge at the end of the game
 function badgeHandler(player, badge) {
   badge.kill();
   won = true;
+  player.animations.stop();
 }
-
 // setup game when the web page loads
 window.onload = function () {
   game = new Phaser.Game(800, 600, Phaser.AUTO, '', { preload: preload, create: create, update: update, render: render });
@@ -124,12 +125,22 @@ window.onload = function () {
   }
   // while the game is running
   function update() {
+    if(won) {
+    return;
+           
+    }
     text.text = "SCORE: " + currentScore;
     game.physics.arcade.collide(player, platforms);
     game.physics.arcade.overlap(player, items, itemHandler);
     game.physics.arcade.overlap(player, badges, badgeHandler);
     player.body.velocity.x = 0;
-
+      
+    if (won) {
+      winningMessage.text = "YOU WIN!!!";
+      player.animations.stop();
+      return;
+    }
+         
     // is the left cursor key presssed?
     if (cursors.left.isDown) {
       player.animations.play('walk', 10, true);
@@ -151,9 +162,6 @@ window.onload = function () {
       player.body.velocity.y = -400;
     }
     // when the player winw the game
-    if (won) {
-      winningMessage.text = "YOU WIN!!!";
-    }
   }
 
   function render() {
