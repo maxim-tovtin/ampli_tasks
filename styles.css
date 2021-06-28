@@ -102,9 +102,9 @@ header img:hover {
 }
 
 .card {
+  min-width: 100px;
   max-width: 500px;
   margin: 10px;
-  padding: 50px;
   border-bottom: 3px solid grey;
   border-radius: 5px;
 }
