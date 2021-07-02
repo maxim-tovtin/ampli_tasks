@@ -8,22 +8,31 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-a {
-  text-decoration: none;
-  color: #c7e8ff;
-}
-
-a:hover{
-  color: #13c919;
-}
-
 .cola {
-  color: #c7e8ff;
+  text-decoration: none;
 }
 
 .cola:hover {
-   padding: 10px;
-   color: #13c919;
+  padding: 3px;
+}
+
+.ca{
+  background-color: #b05c5c;
+  color: #a7dbff;
+}
+
+.ca:hover{
+  background-color: #a7dbff;
+  color: #b05c5c;
+}
+
+.cA{
+  color: 	#b05c5c;
+  text-decoration: none;
+}
+
+.cA:hover{
+  color: #c7e8ff;
 }
 
 .nav {
@@ -53,10 +62,6 @@ a:hover{
   margin-right: auto;
 }
 
-.name:hover {
-  color: #fffa62;
-}
-
 header {
   padding-top: 40px;
   width: 100%;
@@ -79,13 +84,8 @@ header img:hover {
 .tag {
   display: table;
   padding: 10px;
-  background-color: #fff;
   margin: 10px auto;
   border-radius: 10px;
-}
-
-.tag:hover  {
-  background-color: #fffa62;
 }
 
 .sub-title {
@@ -98,7 +98,7 @@ header img:hover {
   flex-flow: row;
   margin: 0 auto;
   justify-content: space-around;
-  background-color: #adfe0091;
+  background-color: #68920d91;
 }
 
 .card {
@@ -109,20 +109,20 @@ header img:hover {
   border-radius: 5px;
 }
 
-.tag-yellow {
-  background-color: #ff9904;
+.tag-1 {
+  background-color: #b05c5c;
 }
 
-.tag-yellow:hover{
-    background-color: 	#8cff66;
+.tag-1:hover {
+  background-color: #a7dbff;
 }
 
-.tag-blue {
-  background-color: #0399ff;
+.tag-2 {
+  background-color: #a7dbff;
 }
 
-.tag-blue:hover{
-    background-color: 	#8cff66;
+.tag-2:hover {
+  background-color: #b05c5c;
 }
 
 .tag-list {
@@ -132,14 +132,31 @@ header img:hover {
   color: #fff;
 }
 
+.a{
+  color: #a7dbff;
+}
+
+.a:hover{
+  color: #b05c5c;
+}
+
+.b{
+  color: #b05c5c;
+}
+
+.b:hover{
+  color: #a7dbff;
+}
+
+
 footer {
   text-align: center;
   padding: 60px;
-  background-color: #adfe0091;
+  background-color: #68920d91;
 }
 
 .col {
-  color: #105803;
+  color: #b05c5c;;
 }
 
 @media (min-width: 1400px) {
