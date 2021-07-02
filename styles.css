@@ -6,6 +6,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
+  background-image: url('./images/3.gif');
 }
 
 .cola {
@@ -63,10 +64,10 @@ body {
 }
 
 header {
-  padding-top: 40px;
+  padding-top: 15px;
   width: 100%;
-  background-image: url('./images/2.jpg');
-  height: 500px;
+
+  height: 350px;
   background-size: cover;
   text-align: center;
 }
@@ -98,7 +99,7 @@ header img:hover {
   flex-flow: row;
   margin: 0 auto;
   justify-content: space-around;
-  background-color: #68920d91;
+
 }
 
 .card {
@@ -151,12 +152,12 @@ header img:hover {
 
 footer {
   text-align: center;
-  padding: 60px;
-  background-color: #68920d91;
+  padding: 30px;
+  
 }
 
 .col {
-  color: #b05c5c;;
+  color: #b05c5c;
 }
 
 @media (min-width: 1400px) {
